@@ -67,3 +67,47 @@ https://dev.to/edge-and-node/the-complete-guide-to-full-stack-web3-development-4
 https://hardhat.org/tutorial/debugging-with-hardhat-network
 
 https://hardhat.org/hardhat-runner/docs/getting-started#installation
+
+
+$ npx hardhat compile
+$ npx hardhat run scripts/deploy.js --network localhost
+
+Lock with 0.001 ETH and unlock timestamp 1682008353 deployed to 0x5FbDB2315678afecb367f032d93F642f64180aa3
+Greeter successfully deployed to 0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512
+MyContract successfully deployed to 0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0
+Token successfully deployed to 0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9
+
+Contract deployment: <UnrecognizedContract>
+  Contract address:    0x5fbdb2315678afecb367f032d93f642f64180aa3
+  Transaction:         0x0074d227848006f8931c125f4e879ef29482c230292c054c97be14829cb81ed6
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  Value:               0.001 ETH
+  Gas used:            326112 of 326112
+  Block #1:            0x0afbf477c548c3083b64655018c01442539a8285ec36453ffae1dcc97189fde5
+
+  Contract deployment: <UnrecognizedContract>
+  Contract address:    0xe7f1725e7734ce288f8367e1bb143e90bb3f0512
+  Transaction:         0x6b4b88e775df406f232ca9ba1ce22e135e6e591f6c9eaf7e75dfade93ac572fd
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  Value:               0 ETH
+  Gas used:            618137 of 618137
+  Block #2:            0x6c3b6813ff096389662f841db886d94078d3467ad262362bfc55d5061cdbe9b6
+
+  console.log:
+    Contract C.log: Deploying a Greeter with greeting: Hello! Greeter deployed.
+
+  Contract deployment: <UnrecognizedContract>
+  Contract address:    0x9fe46736679d2d9a65f0992f2272de9f3c7fa6e0
+  Transaction:         0x1c21847e28e4cfae6453b9d951dca4ba983b412423a5e1dd7045dfc040bb37e5
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  Value:               0 ETH
+  Gas used:            225974 of 225974
+  Block #3:            0x303e51027325105ed2e7539c1b292a05778d6d6581075a0707072330b75a839f
+
+  Contract deployment: <UnrecognizedContract>
+  Contract address:    0xcf7ed3acca5a467e9e704c703e8d87f634fb0fc9
+  Transaction:         0xc005f7c169cd64cefe00cbf6ac9719337d3da6c98209680d1eb4e59da0173ef5
+  From:                0xf39fd6e51aad88f6f4ce6ab8827279cfffb92266
+  Value:               0 ETH
+  Gas used:            549674 of 549674
+  Block #4:            0x1ad657b73c08a347cfa8647bdb7b146a3889a26397310223b992ae6ce073b60d

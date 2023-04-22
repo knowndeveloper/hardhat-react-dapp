@@ -19,15 +19,17 @@ async function main() {
 
   const MyContract = await hre.ethers.getContractFactory("MyContract");
   const mycontract = await MyContract.deploy();
+
+  const Token = await hre.ethers.getContractFactory("Token");
+  const token = await Token.deploy();
   
   await lock.deployed();
   await greeter.deployed();
   await mycontract.deployed();
+  await token.deployed();
 
   console.log(
-    `Lock with ${ethers.utils.formatEther(
-      lockedAmount
-    )}ETH and unlock timestamp ${unlockTime} deployed to ${lock.address}`
+    `Lock with ${ethers.utils.formatEther(lockedAmount)} ETH and unlock timestamp ${unlockTime} deployed to ${lock.address}`
   );
 
   console.log(
@@ -36,6 +38,10 @@ async function main() {
 
   console.log(
     `MyContract successfully deployed to ${mycontract.address}`
+  );
+
+  console.log(
+    `Token successfully deployed to ${token.address}`
   );
 }
 
